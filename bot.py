@@ -7,6 +7,7 @@ import random
 import discord
 from dotenv import load_dotenv
 from discord.ext import commands
+from webserver import keep_alive
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -90,4 +91,5 @@ async def rayyanwisdom(ctx):
     rresponse = random.choice(rwisdom)
     await ctx.send(rresponse)
 
+keep_alive()
 bot.run(TOKEN)
