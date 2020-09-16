@@ -59,6 +59,11 @@ async def karenwisdom(ctx):
         "Hello my friends!",
         "We see the homeless as two standard deviations below the mean of human.",
         "Could you unplug for me please?",
+        "C’mon big guy, let’s go potty",
+        "I travel vicariously through you guys",
+        "I ate some sweet potato earlier",
+        "Let me go brush my teeth",
+
 
     ]
     kresponse = random.choice(kwisdom)
@@ -77,6 +82,10 @@ async def susanwisdom(ctx):
         "I like Truman.",
         "Y’all take out your notes.",
         "MacArthur was a...questionable kinda guy.",
+        "I would just talk about Hitler",
+        "....",
+        "Wake up, Carl ",
+        "You’ve got to have your cigarettes",
 
     ]
     sresponse = random.choice(swisdom)
@@ -90,6 +99,49 @@ async def rayyanwisdom(ctx):
     ]
     rresponse = random.choice(rwisdom)
     await ctx.send(rresponse)
+
+@bot.command(name='huywisdom')
+async def huywisdom(ctx):
+    wisdom = [
+        "What does poggers mean?",
+        "This is academic dishonesty.",
+        "Mega cool.",
+        "I hate Vietnamese people.",
+        "Detach yourself from worldly desire.",
+        "I don’t get it.",
+        "Have a very wonderful day.",
+        "At least 7.",
+
+    ]
+    response = random.choice(wisdom)
+    await ctx.send(response)
+
+@bot.command(name='deannawisdom')
+async def deannawisdom(ctx):
+    wisdom = [
+        "This reminds me of when the gondola at Disney World broke down.",
+        "This thesis doesn’t make any sense.",
+        "I kind of like that actually.",
+        "Ansh has great hair.",
+        "If I play some Disney World food reviews in the background, will that distract you guys?",
+        "Thank the Phoenicians.",
+        "I like to eat cereal while watching my son play Skyrim.",
+        "I just don’t like giving 100s because no one is perfect. ",
+        "You wrote a really fascinating essay! Don’t think a 70 is a bad thing. ",
+
+    ]
+    response = random.choice(wisdom)
+    await ctx.send(response)
+
+@bot.command(name='haritawisdom', help='Deshpande')
+async def haritawisdom(ctx):
+    wisdom = [
+        "Bonjour class.",
+        "Wake up Carl.",
+        "Je refuse.",
+    ]
+    response = random.choice(wisdom)
+    await ctx.send(response)
 
 keep_alive()
 bot.run(TOKEN)
